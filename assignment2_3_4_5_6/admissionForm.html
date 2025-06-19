@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="formcontainer">
+      <h1>School Admission Form</h1>
+      <form id="admissionForm">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Enter first name"
+          />
+          <div class="error-message" id="firstNameError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Enter last name"
+          />
+          <div class="error-message" id="lastNameError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </div>
+          <div class="error-message" id="genderError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="applyingClass">Applying For Class:</label>
+          <select id="applyingClass" name="applyingClass">
+            <option value="">-- Select Class --</option>
+            <option value="Nursery">Nursery</option>
+            <option value="LKG">LKG</option>
+            <option value="HKG">HKG</option>
+            <option value="Class 1">Class 1</option>
+          </select>
+          <div class="error-message" id="applyingClassError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Full Address:</label>
+          <textarea
+            id="address"
+            name="address"
+            rows="3"
+            placeholder="Enter your full address"
+          ></textarea>
+          <div class="error-message" id="addressError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="contactNumber">Contact Number:</label>
+          <input
+            type="tel"
+            id="contactNumber"
+            name="contactNumber"
+            placeholder="e.g., 9876543210"
+            maxlength="10"
+          />
+          <div class="error-message" id="contactNumberError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email ID:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="e.g., example@domain.com"
+          />
+          <div class="error-message" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="fatherName">Father's Full Name:</label>
+          <input
+            type="text"
+            id="fatherName"
+            name="fatherName"
+            placeholder="Enter father's full name"
+          />
+          <div class="error-message" id="fatherNameError"></div>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="declaration" name="declaration" />
+          <label for="declaration"
+            >I hereby declare that the information provided is true and correct
+            to the best of my knowledge and belief.</label
+          >
+          <div class="error-message" id="declarationError"></div>
+        </div>
+
+        <button id="mybtn" type="submit">Submit Application</button>
+        <p id="formSubmissionMessage" class="message"></p>
+      </form>
+    </div>
+
+    <script src="script1.js"></script>
+  </body>
+</html>

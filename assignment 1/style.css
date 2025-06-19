@@ -1,0 +1,92 @@
+body {
+  position: relative;
+  margin-top: 60px;
+}
+
+.topnav {
+  /* background-color: #a06565; */
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #1d0202;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #f47c7c;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+.text-center {
+  text-align: center;
+}
+.amazing-hr {
+  border: 1px solid #0faeec;
+}
+.pic img {
+  width: auto;
+  height: 300px;
+  display: block;
+  border: 2px solid red;
+  object-fit: contain;
+}
+.para {
+  display: block;
+  border: 2px solid red;
+}
+.row {
+  display: flex;
+}
+
+.portfolio-footer {
+  background-color: #333; /* Dark background */
+  color: #f4f4f4; /* Light text */
+  padding: 40px 20px; /* Top/bottom and left/right padding */
+  text-align: center; /* Center content */
+  font-family: "Arial", sans-serif; /* Example font */
+}
+
+.footer-content {
+ 
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Distribute items */
+  align-items: center; /* Vertically align items */
+  
+}
+
+.social-links a {
+  color: #f4f4f4; /* Icon color */
+  font-size: 28px; /* Icon size */
+  margin: 0 10px; /* Space between icons */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+
+.copyright p {
+  font-size: 0.9em;
+  margin-top: 20px; /* Space above copyright */
+}
+
+  .social-links {
+    margin-top: 20px;
+  }
+}
