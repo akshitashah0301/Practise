@@ -1,12 +1,12 @@
 /* inqury button*/
 
-// const headerBtn = document.getElementById("headerBtn");
-// headerBtn.addEventListener("click", function (event) {
-//   console.log("Button clicked!");
-//   alert(
-//     "Thank you for your interest in Little Explorers Preschool! We will redirect you to our inquiry form shortly."
-//   );
-// });
+const headerBtn = document.getElementById("headerBtn");
+headerBtn.addEventListener("click", function (event) {
+  console.log("Button clicked!");
+  alert(
+    "Thank you for your interest in Little Explorers Preschool! We will redirect you to our inquiry form shortly."
+  );
+});
 
 /* admission form */
 
@@ -95,3 +95,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
