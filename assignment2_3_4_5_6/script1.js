@@ -1,17 +1,16 @@
 /* inqury button*/
 
-const headerBtn = document.getElementById("headerBtn");
-headerBtn.addEventListener("click", function (event) {
-  console.log("Button clicked!");
-  alert(
-    "Thank you for your interest in Little Explorers Preschool! We will redirect you to our inquiry form shortly."
-  );
-});
-
 /* admission form */
 
 document.addEventListener("DOMContentLoaded", () => {
   const admissionForm = document.getElementById("admissionForm");
+  const headerBtn = document.getElementById("headerBtn");
+  headerBtn.addEventListener("click", function (event) {
+    console.log("Button clicked!");
+    alert(
+      "Thank you for your interest in Little Explorers Preschool! We will redirect you to our inquiry form shortly."
+    );
+  });
 
   admissionForm.addEventListener("submit", function (event) {
     event.preventDefault();
